@@ -15,31 +15,31 @@ require("controllers/controllerconnexion.php");
     <title>TP PHP FORMULAIRE POST</title>
 </head>
 
-<body>
+<body class="bg bg-dark text-white">
 
-    <div class="bg bg-dark text-white">
 
-        <h1 class="text-center">Connexion</h1>
 
-        <form method="POST" action="">
-            <div class="mb-3">
-                <label for="login" class="form-label">Mail / Pseudo</label>
-                <input name="login" type="text" class="form-control" id="login">
-            </div>
+    <h1 class="text-center">Connexion</h1>
 
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="password">
-            </div>
+    <form method="POST" action="" class="ps-2 pe-2">
+        <div class="mb-3">
+            <label for="login" class="form-label">Mail / Pseudo</label>
+            <input name="login" type="text" class="form-control" id="login">
+        </div>
 
-            <div class="mb-3 form-check">
-                <input name="checkbox" type="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="checkbox">Se souvenir de moi</label>
-            </div>
-            <span class="text-danger"><?= $arrayError["error"] ?? "" ?></span>
-            <button type="submit" class="btn btn-primary">Connexion</button>
-        </form>
-    </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input name="password" type="password" class="form-control" id="password">
+        </div>
+
+        <div class="mb-3 form-check">
+            <input name="checkbox" type="checkbox" class="form-check-input" id="checkbox">
+            <label class="form-check-label" for="checkbox">Se souvenir de moi</label>
+        </div>
+        <span class="text-danger"><?= $arrayError["error"] ?? "" ?></span>
+        <button type="submit" class="btn btn-primary">Connexion</button>
+    </form>
+
 </body>
 
 </html>

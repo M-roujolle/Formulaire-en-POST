@@ -40,7 +40,7 @@ if (!empty($_POST)) {
         if (empty($_POST["confMdp"])) {
             $arrayError["confMdp"] = "Veuillez confirmer votre mot de passe";
         } elseif ($_POST["mdp"] != $_POST["confMdp"]) {
-            $arrayError["confMdp"] = "Les mots de passe ne sont pas identique ! ";
+            $arrayError["confMdp"] = "Les mots de passe ne sont pas identiques ! ";
         }
     }
 
